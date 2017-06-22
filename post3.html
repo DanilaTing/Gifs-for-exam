@@ -9,7 +9,6 @@
     <style media="screen">
       body{
         box-sizing: border-box;
-        padding-top: 100px;
       }
 
       body {
@@ -35,43 +34,48 @@
       }
 
       .logo {
-        background-image: url(self-logo.png);
+        position: absolute;
+        display: block;
+        margin-left: -670px;
+        margin-top: 80px;
+        background-image: url(self-logo-small.png);
         background-repeat: no-repeat;
         background-position: top center;
-        width: 100px;
+        width: 60px;
         height: 100px;
       }
 
       h2 {
-        margin-top: 80px;
+        margin: 300px 0 0 -678px;
+        position: absolute;
+        font-size: 14px;
+        transform: rotate(-90deg);
       }
 
-      div {
-        width: 360px;
-        margin: 100px 0 auto;
-        display: flex;
-        justify-content: space-between;
+      figure {
+        box-shadow: -2px 2px 1px 0px rgba(0,0,0,0.2);
+        margin-top: 100px;
+        height: 600px;
+        /*background-image: url(animation1.gif);
+        background-repeat: no-repeat;
+        background-position: top center;*/
       }
 
-      a {
-        color: black;
+      img {
+        height: 600px;
       }
 
-      @media screen and (max-width: 1179px) {
+
+      @media screen and (max-width: 1441px) {
         body{
           width: 100%;
         }
       }
-
     </style>
   </head>
   <body>
     <a class="logo" href="index.html"></a>
     <h2>Анимированные плакаты Тимофеева Данилы</h2>
-    <div>
-      <a href="post1.html">плакат 1</a>
-      <a href="post2.html">плакат 2</a>
-      <a href="post3.html">плакат 3</a>
-    </div>
+    <figure><img src="meteo.gif" alt="gif3"></figure>
   </body>
 </html>
